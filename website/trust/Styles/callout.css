@@ -1,0 +1,30 @@
+DIV#divPageCallout {
+	CLEAR: both; BACKGROUND: url(images/calloutBlue.png) #2f71af no-repeat left top; WIDTH: 100%; COLOR: white; POSITION: relative; HEIGHT: 13em
+}
+DIV#divPageCallout H1 {
+	FONT-SIZE: 2em; MARGIN: 0px 10px 0px 15px; COLOR: white; PADDING-TOP: 7px; LETTER-SPACING: 1px
+}
+DIV#divPageCallout P {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; FONT-SIZE: 1.1em; PADDING-BOTTOM: 5px; LINE-HEIGHT: 145%; PADDING-TOP: 0px
+}
+DIV#divCalloutImage {
+	RIGHT: 10px; POSITION: absolute; TOP: 7px
+}
+DIV#divCalloutImage IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+DIV#divColorBar {
+	CLEAR: both; WIDTH: 982px; HEIGHT: 10px; BACKGROUND-COLOR: #058
+}
+DIV#divColorBar P {
+	FONT-WEIGHT: normal; FONT-SIZE: 11pt; MARGIN-LEFT: 25px; COLOR: #fff; PADDING-TOP: 10px; HEIGHT: 40px
+}
+DIV#divColorBar IMG {
+	BORDER-RIGHT: #fff 0px solid; BORDER-TOP: #fff 0px solid; BORDER-LEFT: #fff 0px solid; WIDTH: 103px; MARGIN-RIGHT: 14px; BORDER-BOTTOM: #fff 0px solid; HEIGHT: 28px
+}
+DIV#divColorBar A {
+	COLOR: #fff; PADDING-TOP: 10px
+}
+DIV#divColorBar A:hover {
+	BACKGROUND-COLOR: transparent! important
+}

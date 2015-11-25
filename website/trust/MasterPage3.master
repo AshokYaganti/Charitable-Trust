@@ -1,0 +1,245 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage3.master.cs" Inherits="MasterPage3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>Charitable Trust</title>
+        <link rel="stylesheet" type="text/css" href="style/csharp.css" />
+        <link rel="stylesheet" type="text/css" href="style/main.css" />
+        <link rel="stylesheet" type="text/css" href="style/content.css" />
+
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <script src="scripts/cookies.js" type="text/javascript"></script>
+    <script src="scripts/ajax.js" type="text/javascript"></script>  
+    
+     <style type="text/css">
+        .style1
+        {
+            width: 60%;
+        }
+        .style2
+        {
+            height: 140px;
+            width: 23%;
+        }
+         #Img1
+         {
+             width: 208px;
+             margin-left: 0px;
+         }
+    </style>
+  
+    <script type="text/javascript">
+        var x = 0;
+        var images = new Array()
+        images[0] = "images/s1.jpg";
+        images[1] = "images/s2.jpg";
+        images[2] = "images/s3.jpg";
+        images[3] = "images/s4.jpg";
+        images[4] = "images/s5.jpg";
+        images[5] = "images/s6.jpg";
+        images[6] = "images/s7.jpg";
+        images[7] = "images/s8.jpg";
+        images[8] = "images/s9.jpg";
+        images[9] = "images/s10.jpg";
+        images[10] = "images/s11.jpg";
+        
+        setTimeout("changeImage()", 1000);
+        function changeImage() {
+            document.getElementById("img").src = images[x];
+            if (x < 10) {
+                x = x + 1;
+                setTimeout("changeImage()", 1500);
+            }
+            else {
+                x = 0;
+                setTimeout("changeImage()", 1500);
+            }
+        }
+            </script>
+ 
+   
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <table width="100%" height="500">
+    
+    <tr  height="100">
+    <td colspan="3" height="100"> 
+  
+      <div id="divPageCallout">
+                    <div style="float:right; padding-right: 20px; padding-top: 20px; height: 147px;">
+                        <a id="A10" href="~/Default.aspx" runat="server" title="ExpertPDF Components: .NET Chart Control">
+                        <img id="Img1" runat="server" src="~/images/logo2.jpg" height="125" 
+                            alt="ExpertPDF Components: .NET Chart Control" border="0" /></a>
+                    </div>
+                    <div style="float:left;">
+                    
+                    <h1>
+                        <font size="6" 
+                            style="font-family: 'Times New Roman', Times, serif; font-size: 43px;">Palnadu Educational Charitable Trust</font></h1>
+                   <pre>
+                                                         ....<font size="4">Help the Poor Make a Difference </font>
+                    </pre>
+                    
+                    </div>
+             
+               </div>
+                  <table width="100%" border="4" 
+        style="background-image: url('images/buttons.gif')"><tr>
+        <td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  
+            <a style="text-decoration:none; font-size:12pt; font-family:Calibiri; color:#00CCFF; font-weight:bold;" 
+                href="userhome.aspx">HOME</a></td>
+ 
+ 
+<td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  
+    <a style="text-decoration:none; font-size:12pt; font-family:Calibri;color:#00CCFF;font-weight:bold;" 
+        href="uaboutus.aspx">ABOUT US</a></td>
+<td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  <a style="text-decoration:none; font-size:12pt; font-family:Calibri;color:#00CCFF; font-weight:bold;" href="uagenda.aspx">AGENDA</a></td>
+<td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  <a style="text-decoration:none; font-size:12pt; font-family:Calibri; color:#00CCFF;font-weight:bold;" href="ucontact.aspx">CONTACT US</a></td>
+<td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  <a style="text-decoration:none; font-size:12pt; font-family:Calibri; color:#00CCFF;font-weight:bold;" href="logout.aspx">LOGOUT</a></td>
+</tr>
+ </table>
+   </td>
+    </tr>
+   
+    <tr>
+    <td  width="18%">
+      <div id="divContentLeft">
+                        <asp:Literal ID="LitRightColumn0" runat="server"></asp:Literal>
+                        <asp:Literal ID="LitRightColumn1" runat="server"></asp:Literal>
+
+                        <div id="SubMenu">
+                            <h2 id="h2SubMenu" 
+                                
+                                style="background-color: #0066FF; background-image: url('images/top_img.jpg');">
+                                Trust Details</h2>
+                            <ul id="ulSubMenu">
+                                <li><a id="A15" href="trustmem.aspx" runat="server" title="Chart Types">Trust Members</a></li>
+                                <li><a id="A9" href="wait.aspx" runat="server" title="Chart Titles">Account Details</a></li>
+                                <li><a id="A8" href="donators.aspx" runat="server" title="Colors">Donors List</a></li>
+                                <li><a id="A7" href="student.aspx" runat="server" title="Legend">Student Details</a></li>
+                                <li><a id="A2" href="purchase.aspx" runat="server" title="Legend">Payment Details</a></li>
+                                   <li><a id="A1" href="balance.aspx" runat="server" title="Legend">Net Balance(Rs)</a></li>
+                                   <li><a id="A3" href="comments.aspx" runat="server" title="Legend">Comments(Suggestions)</a></li>
+                               
+                            </ul>
+                        </div>
+                           <div class="SubMenu">
+                            <h2 class="h2SubMenu" style="background-image: url('images/top_img.jpg')">
+                                Personal Details</h2>
+                            <ul class="ulSubMenu">
+                                <li><a id="A18" href="profile.aspx" runat="server" title="General information about data sources">Profile Details</a></li>
+                                <li><a id="A4" href="changepass.aspx" runat="server" title="Data Table">Change Password</a></li>
+                                <li><a id="A5" href="memshipcard.aspx" runat="server" title="Data View">Membership Card</a></li>
+                               
+                            </ul>
+                        </div>
+
+                       
+
+                       
+
+                        <asp:Literal ID="LitRightColumn2" runat="server"></asp:Literal>
+                    </div>
+  
+  
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+  
+  
+    </td>
+
+    <td class="style1">
+  
+      <asp:ContentPlaceHolder ID="middle" runat="server"></asp:ContentPlaceHolder>
+       
+    </td>
+    <td  width="20%" class="style2">
+   
+    
+     <img id="img" src="images/s1.jpg" width="280" height="350" />
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      
+    </td>
+        
+    </tr>
+ 
+     
+    <tr height="50">
+    <td colspan="3" height="50"> 
+       <div>
+            <p id="pCopyright" style="padding-top: 0px; font-weight: bold; color: #FF0066;">
+                Copyright 2012. palnaduedutrust.com <a href="http://www.palnaduedutrust.net" title="charitable trust">
+                    </a>.</p>
+        </div>
+    </td>
+    </tr>
+    </table>
+    </form>
+    
+</body>
+</html>

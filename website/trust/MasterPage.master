@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Charitable Trust</title>
+        <link rel="stylesheet" type="text/css" href="style/csharp.css" />
+        <link rel="stylesheet" type="text/css" href="style/main.css" />
+        <link rel="stylesheet" type="text/css" href="style/content.css" />
+
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <script src="scripts/cookies.js" type="text/javascript"></script>
+    <script src="scripts/ajax.js" type="text/javascript"></script>  
+
+     <style type="text/css">
+         .style1
+        {
+            width: 60%;
+             color: #FF3300;
+         }
+        .style2
+        {
+            height: 140px;
+            width: 23%;
+        }
+         #Img1
+         {
+             width: 220px;
+             margin-left: 0px;
+             height: 141px;
+             margin-right: 0px;
+             margin-top: 0px;
+         }
+         .style3
+         {
+             width: 100%;
+             height: 186px;
+         }
+         .style4
+         {
+             width: 17px;
+         }
+    </style>
+  
+    <script type="text/javascript">
+        var x = 0;
+        var images = new Array()
+        images[0] = "images/s1.jpg";
+        images[1] = "images/s2.jpg";
+        images[2] = "images/s3.jpg";
+        images[3] = "images/s4.jpg";
+        images[4] = "images/s5.jpg";
+        images[5] = "images/s6.jpg";
+        images[6] = "images/s7.jpg";
+        images[7] = "images/s8.jpg";
+        images[8] = "images/s9.jpg";
+        images[9] = "images/s10.jpg";
+        images[10] = "images/s11.jpg";
+       
+        setTimeout("changeImage()", 1000);
+        function changeImage() {
+            document.getElementById("img").src = images[x];
+            if (x < 10) {
+                x = x + 1;
+                setTimeout("changeImage()", 1500);
+            }
+            else {
+                x = 0;
+                setTimeout("changeImage()", 1500);
+            }
+        }
+            </script>
+ 
+   
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <table width="100%" height="500">
+    
+    <tr  height="100">
+    <td colspan="3" height="100"> 
+  
+      <div id="divPageCallout">
+                    <div style="float:right; padding-right: 20px; padding-top: 20px; height: 147px;">
+                        <a id="A10" href="~/Default.aspx" runat="server" title="ExpertPDF Components: .NET Chart Control">
+                        <img id="Img1" runat="server" src="~/images/logo2.jpg" 
+                            alt="ExpertPDF Components: .NET Chart Control" border="0" /></a>
+                    </div>
+                    <div style="float:left;">
+                    
+                    <h1>
+                        <font size="6" 
+                            style="font-family: 'Times New Roman', Times, serif; font-size: 43px;">Palnadu Educational Charitable Trust</font></h1>
+                    <pre>
+                                                         ....<font size="4">Help the Poor Make a Difference </font>
+                    </pre>
+                    
+                    </div>
+             
+               </div>
+                  <table width="100%" border="4" 
+        style="background-image: url('images/buttons.gif')"><tr>
+        <td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  
+            <a style="text-decoration:none; font-size:12pt; font-family:Calibiri; color:#00CCFF; font-weight:bold;" 
+                href="login.aspx">HOME</a></td>
+ 
+ 
+<td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  
+    <a style="text-decoration:none; font-size:12pt; font-family:Calibri;color:#00CCFF;font-weight:bold;" 
+        href="aboutus.aspx">ABOUT US</a></td>
+<td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  <a style="text-decoration:none; font-size:12pt; font-family:Calibri;color:#00CCFF; font-weight:bold;" href="agenda.aspx">AGENDA</a></td>
+<td align=center style="background-color: #3366CC; background-image: url('images/top_img3.jpg');">  <a style="text-decoration:none; font-size:12pt; font-family:Calibri; color:#00CCFF;font-weight:bold;" href="contact.aspx">CONTACT US</a></td>
+
+</tr>
+ </table>
+   </td>
+    </tr>
+   
+    <tr>
+    <td  width="20%">
+   <img id="img" src="images/s1.jpg" width="280" height="350" />
+  <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </td>
+
+    <td class="style1" align="justify" style="font-size: 14px">
+  
+ The  Palnadu Educational Charitable Trust is an education charity.  We make grants each year towards 
+
+services for children and young people under the age of 18 who are from disadvantaged backgrounds or 
+
+disabled. We are providing Education services that support the learning and development of disabled children 
+
+and young people. Services that provide advice and support with formal education can be supported.  
+Services without a strategic element, such as those that support pupils by paying their school fees or 
+
+purchasing school uniforms,books etc are unlikely to be funded.The main reason for establishing this
+ trust is to make 100% Literacy  in palnadu area and also to increase the Employabilty.
+       
+     
+
+        <br />
+        <br />
+       
+     
+
+        <br />
+        <table class="style3">
+            <tr><td class="style4"></td>
+                <td>
+                     <img src="images/p1.jpg" width="310" style="height: 217px" />&nbsp;</td>
+                     <td> <img src="images/p2.jpg" width="300" style="height: 217px" /></td>
+            </tr>
+        </table>
+
+    </td>
+    <td  width="20%" class="style2">
+   
+    
+       <asp:ContentPlaceHolder ID="right" runat="server"></asp:ContentPlaceHolder>
+      
+    </td>
+        
+    </tr>
+ 
+     
+    <tr height="50">
+    <td colspan="3" height="50"> 
+       <div>
+            <p id="pCopyright" style="padding-top: 0px; font-weight: bold; color: #FF0066;">
+                Copyright 2012. palnaduedutrust.com <a href="http://www.palnaduedutrust.net" title="charitable trust">
+                    </a>.</p>
+        </div>
+    </td>
+    </tr>
+    </table>
+    </form>
+    
+</body>
+</html>

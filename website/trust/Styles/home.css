@@ -1,0 +1,180 @@
+A {
+	COLOR: #006ec6
+}
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #008bcf
+}
+A.clear {
+	COLOR: #000
+}
+A.clear:hover {
+	BACKGROUND-COLOR: transparent
+}
+DIV#divFreeTrial {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 17px; PADDING-BOTTOM: 0px; WIDTH: 195px; PADDING-TOP: 22px
+}
+DIV#divFreeTrial H2 {
+	FONT-SIZE: 16px; COLOR: white
+}
+DIV#divFreeTrial P {
+	PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 12px 0px; PADDING-TOP: 0px
+}
+DIV#divFreeTrial P.button {
+	MARGIN-TOP: 20px! important; DISPLAY: block! important
+}
+DIV#divFreeTrial A {
+	TEXT-DECORATION: none
+}
+DIV#divFeatures A {
+	TEXT-DECORATION: none
+}
+DIV#divPromo {
+	PADDING-RIGHT: 200px; PADDING-LEFT: 5px; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/elvispromo.png", sizingMethod="image"); LEFT: 205px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 5px 10px; WIDTH: 365px; PADDING-TOP: 25px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: -17px; HEIGHT: 240px; BACKGROUND-COLOR: transparent
+}
+UNKNOWN {
+	BACKGROUND-IMAGE: url(images/elvispromo.png)
+}
+DIV#divPromo P {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 25px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+DIV#divPromo H1 {
+	PADDING-RIGHT: 100px; PADDING-LEFT: 25px; FONT-SIZE: 24px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 140%; PADDING-TOP: 5px
+}
+DIV#divPromo A {
+	PADDING-RIGHT: 100px; COLOR: white; TEXT-ALIGN: right
+}
+DIV#divCallout {
+	MARGIN-TOP: -39px; PADDING-LEFT: 24px; FONT-SIZE: 11pt; MARGIN-BOTTOM: 0px! important; COLOR: #fff; BACKGROUND-COLOR: #058; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+DIV#divCallout IMG {
+	BORDER-RIGHT: #fff 0px solid; BORDER-TOP: #fff 0px solid; BORDER-LEFT: #fff 0px solid; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #fff 0px solid
+}
+DIV#divCallout A {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+DIV#divCallout A:hover {
+	BACKGROUND-COLOR: transparent! important
+}
+DIV#divCallout H2 {
+	FONT-SIZE: 1.6em; MARGIN-BOTTOM: 10px
+}
+DIV#divHome {
+	PADDING-RIGHT: 25px; PADDING-LEFT: 25px; FLOAT: left; PADDING-BOTTOM: 5px; PADDING-TOP: 20px; POSITION: relative; TEXT-ALIGN: justify
+}
+DIV#divHome P {
+	MARGIN: 0px 0px 20px; LINE-HEIGHT: 150%
+}
+DIV#divHome H3 {
+	MARGIN: 0px 0px 20px; LINE-HEIGHT: 150%
+}
+DIV#divHome H3 {
+	FONT-SIZE: 1.4em
+}
+DIV#divHome IMG {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+DIV#divHomeLeft {
+	CLEAR: left; PADDING-RIGHT: 15px; FLOAT: left; WIDTH: 485px
+}
+DIV#divHomeLeft H1 {
+	MARGIN-BOTTOM: 15px
+}
+DIV#divHomeCenter {
+	CLEAR: left; FLOAT: left; WIDTH: 480px
+}
+DIV#divHomeInternalLeft {
+	FLOAT: left; WIDTH: 165px
+}
+DIV#divClient {
+	CLEAR: both; BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: 15px 0px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #f5f1ed
+}
+DIV#divClient IMG {
+	BORDER-TOP-WIDTH: 0px! important; BORDER-LEFT-WIDTH: 0px! important; BORDER-BOTTOM-WIDTH: 0px! important; TEXT-ALIGN: center! important; BORDER-RIGHT-WIDTH: 0px! important
+}
+DIV#divClient P {
+	MARGIN: 0px 0px 10px; LINE-HEIGHT: 135%
+}
+DIV#divHomeInternalRight {
+	FLOAT: right; WIDTH: 290px; TEXT-ALIGN: left
+}
+DIV#divHomeInternalRight H2 {
+	MARGIN-BOTTOM: 20px! important
+}
+DIV#divHomeInternalRight H4 {
+	FONT-WEIGHT: bold
+}
+DIV#divHomeInternalRight H4.alth4 A {
+	FONT-WEIGHT: normal; COLOR: #6c9d31
+}
+DIV#divHomeInternalRight P {
+	COLOR: #666
+}
+DIV#divHomeRight {
+	RIGHT: -210px; FLOAT: right; WIDTH: 235px; POSITION: absolute; TOP: 11px
+}
+DIV#divPricing {
+	MARGIN-TOP: 0px; BACKGROUND: url(images/TryItFreeHomePage.png) #fff no-repeat left top; HEIGHT: 1px
+}
+DIV#divPricing A.PricingLinkBlock {
+	DISPLAY: block; WIDTH: 225px; HEIGHT: 100px
+}
+DIV#divPricing A.PricingLinkBlock:hover {
+	BACKGROUND-COLOR: transparent! important
+}
+DIV#divPricing A.PricingLinkText {
+	MARGIN-TOP: 6px; DISPLAY: block; FONT-SIZE: 8pt; WIDTH: 225px; TEXT-ALIGN: center
+}
+DIV#divFeatures {
+	CLEAR: both; BORDER-RIGHT: #f8f4f0 5px solid; PADDING-RIGHT: 3px; BORDER-TOP: #f8f4f0 5px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; MARGIN: 15px 0px; BORDER-LEFT: #f8f4f0 5px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #f8f4f0 5px solid; BACKGROUND-COLOR: #f8f4f0; TEXT-ALIGN: left! important
+}
+DIV#divFeatures DIV {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; LINE-HEIGHT: 160%; PADDING-TOP: 10px; BACKGROUND-COLOR: #f5f1ed
+}
+DIV#divFeatures H2 {
+	FONT-SIZE: 1.4em; MARGIN-BOTTOM: 10px
+}
+DIV#divFeatures P {
+	MARGIN-BOTTOM: 17px
+}
+DIV#divFeatures UL {
+	MARGIN-BOTTOM: 17px
+}
+DIV#divFeatures UL {
+	PADDING-LEFT: 3px; LIST-STYLE-TYPE: none
+}
+DIV#divFeatures UL LI {
+	PADDING-LEFT: 20px; FONT-SIZE: 8pt! important; BACKGROUND: url(images/check.png) no-repeat left 4px; LINE-HEIGHT: 200%; TEXT-ALIGN: left
+}
+DIV#divFeatures LABEL {
+	FONT-SIZE: 10pt; WIDTH: 100%! important
+}
+DIV#divClientFlash {
+	BORDER-TOP: #ccc 1px solid; FONT-SIZE: 8pt; MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 15px; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: left
+}
+DIV#divClientFlash SPAN {
+	DISPLAY: block; MARGIN-BOTTOM: 15px; COLOR: #777
+}
+DIV#divClient {
+	PADDING-BOTTOM: 20px; TEXT-ALIGN: left
+}
+DIV#divClient H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; MARGIN-BOTTOM: 10px! important
+}
+DIV#divClient IMG {
+	MARGIN-BOTTOM: 5px; MARGIN-RIGHT: 9px
+}
+DIV#divClient P {
+	MARGIN: 0px 0px 5px
+}
+DIV#divClient SPAN {
+	MARGIN: 0px
+}
+H2.GreenHeader {
+	MARGIN-TOP: 25px; COLOR: #090
+}
+H2.GreenHeader A {
+	MARGIN-TOP: 10px; DISPLAY: block; FONT-SIZE: 10pt; TEXT-DECORATION: underline
+}

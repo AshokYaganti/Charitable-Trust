@@ -1,0 +1,57 @@
+DIV#divHeader {
+	BORDER-TOP: #269 5px solid; WIDTH: 100%; COLOR: black; POSITION: relative; BACKGROUND-COLOR: white
+}
+DIV#divHeader IMG {
+	BORDER-TOP-WIDTH: 0px; CLEAR: left; BORDER-LEFT-WIDTH: 0px; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 15px 0px 10px 15px; BORDER-RIGHT-WIDTH: 0px
+}
+A#CoBranded {
+	BACKGROUND-POSITION: -25px 0px; DISPLAY: block; LEFT: 235px; WIDTH: 195px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: 10px; HEIGHT: 60px
+}
+DIV#divErrorMessage {
+	FLOAT: left; MARGIN: 15px 15px 0px 0px
+}
+FORM#formLogin {
+	LEFT: 435px; MARGIN: 15px 35px 15px 0px; WIDTH: 22em; POSITION: absolute
+}
+FORM#formLogin UL {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 3px
+}
+FORM#formLogin UL LI {
+	DISPLAY: inline
+}
+FORM#formLogin UL LI A {
+	DISPLAY: inline; FONT-SIZE: 11px; PADDING-BOTTOM: 1px; COLOR: #000; TEXT-DECORATION: none
+}
+FORM#formLogin UL LI A:hover {
+	
+}
+FORM#formLogin INPUT {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ccc 1px solid; DISPLAY: inline; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 5px 5px 5px 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: #ccc 1px solid; WIDTH: 90px; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid
+}
+FORM#formLogin INPUT.hidden {
+	DISPLAY: none
+}
+FORM#formLogin INPUT.clear {
+	WIDTH: 50px
+}
+DIV#divCornerOverlay {
+	CLEAR: both; PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; RIGHT: 0px; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important; POSITION: absolute; TOP: -10px
+}
+IMG#imgCornerOverlay {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px 0px 0px 2px; BORDER-RIGHT-WIDTH: 0px
+}
+UL#ulHorizMenu {
+	MARGIN-LEFT: 0px; MARGIN-BOTTOM: 0px; CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.5em; COLOR: white; PADDING-TOP: 0.5em; BORDER-BOTTOM: #347bb3 3px solid; LIST-STYLE-TYPE: none; HEIGHT: 1.2em; BACKGROUND-COLOR: #058
+}
+UL#ulHorizMenu LI {
+	DISPLAY: inline; MARGIN: 0px -5px 0px 0px; BACKGROUND-COLOR: #058; TEXT-ALIGN: left
+}
+UL#ulHorizMenu LI A {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; COLOR: white; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #058; TEXT-DECORATION: none
+}
+UL#ulHorizMenu LI A:hover {
+	BACKGROUND-COLOR: #48b
+}
+UL#ulHorizMenu LI A.selected {
+	BACKGROUND: #347bb3
+}

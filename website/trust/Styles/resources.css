@@ -1,0 +1,88 @@
+DIV#divContentRight { display: none;}
+
+
+DIV#ArticleSummaries {
+  width: 720px;
+  margin-right: 0px !important;
+  margin-left: 30px;
+  margin-top: 20px;
+  }
+  
+DIV#ArticleSummaries P {
+  margin-bottom: 20px;
+  }
+
+DIV.ArticleSummary {
+  
+  margin-bottom: 0px !important;
+  }
+  
+DIV.ArticleSummary h2 {
+  font-size: 14pt !important;
+  font-weight: normal;
+  border: 0px solid #FFF !important;  
+  }
+  
+DIV.ArticleSummary H2 SPAN {
+  color: #555;
+  font-size: 10pt;
+  display: block;
+  }
+  
+DIV.ArticleSummary H2 A {
+  text-decoration: none;
+  }
+  
+DIV.ArticleSummary H2 A:hover {
+  color: #39C;
+  }
+  
+  
+DIV#ArticleBody h4 {
+  font-size: 14pt !important;
+  font-weight: normal; 
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  }
+  
+  
+DIV#ArticleBody P BIG, DIV#PBEMMArchives P BIG {
+  font-weight: normal;
+  font-size: 13pt;
+  color: #269;
+  }
+
+DIV#PBEMMArchives P BIG {
+  font-weight: bold;
+  font-size: 10pt;
+  color: #269;
+  }
+      
+DIV#ArticleBody P.Indent BIG {
+  display: block;
+  float: left;
+ 
+  margin-right: 10px;      
+  height: 100%;
+  
+  }
+  
+P.ArticleNotice {
+  border-top: 1px solid #CCC;
+  padding-top: 20px;
+  }
+  
+P.ArticleNotice SPAN {
+  display: block;
+  float: left;
+  
+  color: #269;
+  font-weight: bold;
+  margin-right: 5px;
+  text-indent: 20px;
+  
+  background-image: url(images/icons/user.png);
+  background-repeat: no-repeat;
+  
+  }
+  

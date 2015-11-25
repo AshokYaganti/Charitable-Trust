@@ -1,0 +1,72 @@
+#divFooter {
+	BORDER-TOP-WIDTH: 0px; CLEAR: both; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 0.8em; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px 0px 0px -1px; WIDTH: 983px; COLOR: #fff; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+#divFooter UL#ulHorizFooter {
+	MARGIN-LEFT: 0px; MARGIN-BOTTOM: 0px; CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; COLOR: white; PADDING-TOP: 5px; LIST-STYLE-TYPE: none; BACKGROUND-COLOR: #058; TEXT-ALIGN: left
+}
+#divFooter UL#ulHorizFooter LI {
+	DISPLAY: inline; MARGIN: 0px -5px 0px 0px; BACKGROUND-COLOR: #058; TEXT-ALIGN: left
+}
+#divFooter UL#ulHorizFooter LI A {
+	PADDING-RIGHT: 1.3em; PADDING-LEFT: 1.3em; FONT-SIZE: 1.1em; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #def; PADDING-TOP: 5px; BACKGROUND-COLOR: #058; TEXT-DECORATION: none
+}
+#divFooter UL#ulHorizFooter LI A:hover {
+	COLOR: white; BACKGROUND-COLOR: #48b
+}
+#divFooter P#pNum {
+	FONT-SIZE: 1.1em; RIGHT: 12px; FLOAT: right; MARGIN: 0px 0px -18px; POSITION: relative; TOP: -18px
+}
+P#pNum A {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+UL#ulHorizGrayFooter {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 0px; MARGIN: 5px auto 0px; WIDTH: 983px; COLOR: #269; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+UL#ulHorizGrayFooter LI {
+	FLOAT: left; LIST-STYLE-TYPE: none
+}
+UL#ulHorizGrayFooter LI A {
+	PADDING-RIGHT: 10px; DISPLAY: block; PADDING-LEFT: 35px; FLOAT: left; PADDING-BOTTOM: 5px; COLOR: #269; LINE-HEIGHT: 160%; PADDING-TOP: 1px; HEIGHT: 15px
+}
+UL#ulHorizGrayFooter A:hover {
+	TEXT-DECORATION: none
+}
+#pCopyright {
+	CLEAR: both; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 10px; COLOR: #666; PADDING-TOP: 10px
+}
+#liAboutBroadwick {
+	BACKGROUND: url(images/aboutbroadwickbw.png) no-repeat 15px top
+}
+#liMediaCenter {
+	BACKGROUND: url(images/icons/mediacenterbw.png) no-repeat 15px top
+}
+#liPartnerships {
+	BACKGROUND: url(images/icons/partnershipsiconbw.png) no-repeat 15px top
+}
+#liTermsConditions {
+	BACKGROUND: url(images/icons/termsiconbw.png) no-repeat 15px top
+}
+#liAntiSpamPolicy {
+	BACKGROUND: url(images/icons/antispamiconbw.png) no-repeat 15px top
+}
+#liContactUs {
+	BACKGROUND: url(images/icons/phoneiconbw.png) no-repeat 15px top
+}
+#liAboutBroadwick:hover {
+	BACKGROUND: url(images/icons/aboutbroadwickcolor.png) no-repeat 15px top
+}
+#liMediaCenter:hover {
+	BACKGROUND: url(images/icons/mediacentercolor.png) no-repeat 15px top
+}
+#liPartnerships:hover {
+	BACKGROUND: url(images/icons/partnershipsiconcolor.png) no-repeat 15px top
+}
+#liTermsConditions:hover {
+	BACKGROUND: url(images/icons/termsiconcolor.png) no-repeat 15px top
+}
+#liAntiSpamPolicy:hover {
+	BACKGROUND: url(images/icons/antispamiconcolor.png) no-repeat 15px top
+}
+#liContactUs:hover {
+	BACKGROUND: url(images/icons/phoneiconcolor.png) no-repeat 15px top
+}

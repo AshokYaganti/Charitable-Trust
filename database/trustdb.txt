@@ -1,0 +1,296 @@
+create table regmem
+(
+memshipid int primary key identity(10000,1), 
+name varchar(50),
+fathername varchar(50),
+userid varchar(50),
+password varchar(20),
+qualification varchar(50),
+secque varchar(50),
+answer varchar(50),
+phno varchar(20),
+addr varchar(100))
+
+-----------------------------------------------------------------1
+
+create  procedure sp_regmembers
+(@fn varchar(50),
+@ln varchar(50),
+@userid varchar(50),
+@password varchar(20),
+@qualification varchar(50),
+@secque varchar(50),
+@answer varchar(50),
+@phno varchar(20),
+@addr varchar(100),
+@memshipid int output)
+as
+begin
+insert into regmem values(@fn,@ln,@userid,@password,@qualification,@secque,@answer,@phno,@addr)
+SET @memshipid=SCOPE_IDENTITY()
+RETURN @memshipid
+end
+
+------------------------------------------------------------------------------2
+
+
+create procedure sp_userid
+as
+begin
+select userid from regmem
+end
+
+---------------------------------------------------------------------------------3
+
+create procedure sp_userdetails
+(@userid varchar(50))
+as
+begin
+select userid,password from regmem where userid=@userid;
+end
+
+------------------------------------------------------------------------------------4
+
+create procedure sp_username
+(@userid varchar(50))
+as
+begin
+select name from regmem where userid=@userid
+end
+--------------------------------------------------------------------------------------5
+
+
+create table donators
+(memshipid varchar(10),
+name varchar(50),
+fathername varchar(50),
+qualification varchar(100),
+amount float,
+address varchar(100))
+
+---------------------------------------------------------------------------------------------6
+
+create procedure sp_donators
+as
+begin
+select * from donators
+end
+------------------------------------------------------------------------------------------------7
+
+create table students
+(stdname varchar(50),
+stdfathername varchar(50),
+dob varchar(50),
+school varchar(100),
+amount float,
+year varchar(20),
+address varchar(100))
+
+------------------------------------------------------------------------------------------------8
+
+create  procedure sp_insstudents
+(@stdname varchar(50),
+@stdfathername varchar(50),
+@dob varchar(50),
+@school varchar(100),
+@amount varchar(50),
+@year varchar(20),
+@address varchar(100))
+as
+begin
+insert into students values(@stdname,@stdfathername,@dob,@school,@amount,@year,@address)
+end
+
+---------------------------------------------------------------------------------------------------9
+create  procedure sp_students
+(@year varchar(20))
+as
+begin
+select * from students where year=@year
+end
+
+-----------------------------------------------------------------------------------------------------10
+create table itemdetails
+(itemname varchar(50),
+quantity varchar(10),
+amount float,
+year varchar(20))
+
+---------------------------------------------------------------------------------------------------11
+
+
+create procedure sp_itemdetails
+as
+begin
+select * from itemdetails
+end
+
+--------------------------------------------------------------------------------------------------12
+create procedure sp_insitemdetails
+(@itemname varchar(50),
+@quantity varchar(10),
+@amount varchar(20),
+@year varchar(20))
+as
+begin
+insert into itemdetails values(@itemname,@quantity,@amount,@year)
+end
+
+-----------------------------------------------------------------------------------------------------13
+
+create procedure sp_stddetails
+as
+begin
+select stdname,amount,year,address from students
+end
+
+-------------------------------------------------------------------------------------------------------14
+create procedure sp_memshipid
+as
+begin
+select memshipid from regmem
+end
+
+-------------------------------------------------------------------------------------------------------15
+create procedure sp_memdonardetails
+(@memshipid varchar(50))
+as
+begin
+select name,fathername,qualification,addr from regmem where memshipid=@memshipid
+end
+
+-------------------------------------------------------------------------------------------------------------16
+create procedure sp_insdonors
+(@memshipid varchar(10),
+@name varchar(50),
+@fathername varchar(50),
+@qualification varchar(100),
+@amount varchar(50),
+@address varchar(100))
+as
+begin
+insert into donators values(@memshipid,@name,@fathername,@qualification,@amount,@address)
+end
+
+-------------------------------------------------------------------------------------------------------------------17
+
+create  procedure sp_amount
+(@memshipid varchar(10))
+as
+begin
+select amount from donators where memshipid=@memshipid
+end
+
+------------------------------------------------------------------------------------------------------------------------18
+
+create procedure sp_updatedonors
+(@memshipid varchar(10),
+@amount varchar(50))
+as
+begin
+update donators
+set amount=@amount where memshipid=@memshipid
+end
+
+--------------------------------------------------------------------------------------------------------------------------19
+create  procedure sp_regdet
+as begin
+select memshipid,name,fathername,userid,password,phno,addr from regmem
+end
+
+---------------------------------------------------------------------------------------------------------------------------20
+
+create procedure sp_year
+as
+begin
+select distinct year from students
+end
+
+-----------------------------------------------------------------------------------------------------------------------------21
+
+create procedure sp_totaldonation
+as
+begin
+select SUM(amount) from donators
+end
+---------------------------------------------------------------------------------------------------------------------------22
+
+create procedure sp_totalstdamt
+as
+begin
+select sum(amount) from students
+end
+----------------------------------------------------------------------------------------------------------------23
+
+create procedure sp_totalitemamt
+as
+begin
+select sum(amount) from itemdetails
+end
+
+---------------------------------------------------------------------------------------------------------------24
+create table comments
+(name varchar(50),
+comment nvarchar(max),
+date1 datetime
+)
+
+-----------------------------------------------------------------------------------------------------------25
+create procedure sp_comments
+(@name varchar(50),
+@comment nvarchar(max),
+@date1 datetime)
+as
+begin
+insert into comments values(@name,@comment,@date1)
+end
+
+------------------------------------------------------------------------------------------------------26
+create procedure sp_discomments
+as
+begin
+select * from comments
+end
+
+--------------------------------------------------------------------------------------------------27
+
+create procedure sp_forgotdet
+(@userid varchar(20))
+as
+begin
+select password,secque,answer from regmem where userid=@userid
+end
+
+-------------------------------------------------------------------------------------------------28
+
+create procedure sp_profile
+(@userid varchar(50))
+as
+begin
+select memshipid,name,fathername,userid,qualification,phno,addr from regmem where userid=@userid
+end
+
+-------------------------------------------------------------------------------------------------------------29
+create procedure sp_secque
+(@userid varchar(50))
+as
+begin
+select secque,answer from regmem where userid=@userid
+end
+
+----------------------------------------------------------------------------------------------------------30
+
+create procedure sp_changepassword
+(@userid varchar(50),
+@newpass varchar(50))
+as 
+begin
+update regmem 
+set password=@newpass
+where userid=@userid
+end
+
+------------------------------------------------------------------------------------------------------------31
+
+
+
